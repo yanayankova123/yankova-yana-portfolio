@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Янкова Яна — UI/UX Дизайнер</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">ЯЯ</a>
+            <ul class="nav__menu">
+                <li><a href="#hero" class="nav__link">Главная</a></li>
+                <li><a href="#about" class="nav__link">Обо мне</a></li>
+                <li><a href="#works" class="nav__link">Работы</a></li>
+                <li><a href="#skills" class="nav__link">Навыки</a></li>
+                <li><a href="#contact" class="nav__link">Контакты</a></li>
+            </ul>
+            <button class="nav__toggle" id="navToggle" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero секция -->
+    <section class="hero" id="hero">
+        <div class="hero__bg">
+            <div class="hero__gradient"></div>
+            <div class="hero__pattern"></div>
+        </div>
+        <div class="container hero__content">
+            <p class="hero__subtitle animate-fade-up">UI/UX Designer</p>
+            <h1 class="hero__title animate-fade-up" style="--delay: 0.1s">
+                <span class="hero__name">Янкова</span>
+                <span class="hero__name">Яна</span>
+            </h1>
+            <p class="hero__desc animate-fade-up" style="--delay: 0.2s">
+                Создаю интуитивные интерфейсы и незабываемый пользовательский опыт
+            </p>
+            <div class="hero__cta animate-fade-up" style="--delay: 0.3s">
+                <a href="#works" class="btn btn--primary">Смотреть работы</a>
+                <a href="#contact" class="btn btn--outline">Связаться</a>
+            </div>
+        </div>
+        <div class="hero__scroll">
+            <span>Листай вниз</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__image-wrap">
+                    <div class="about__image">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=600&q=80" alt="Янкова Яна">
+                    </div>
+                </div>
+                <div class="about__content">
+                    <span class="section__label">Обо мне</span>
+                    <h2 class="section__title">Дизайн — это диалог между продуктом и человеком</h2>
+                    <p class="about__text">
+                        Я UI/UX дизайнер с фокусом на создание цифровых продуктов, которые не только красивы, 
+                        но и решают реальные задачи пользователей. Работаю на стыке эстетики и функциональности.
+                    </p>
+                    <p class="about__text">
+                        Более 5 лет опыта в проектировании интерфейсов для веб и мобильных приложений. 
+                        Верю, что хороший дизайн должен быть незаметным — пользователь достигает цели, 
+                        не задумываясь о том, как это работает.
+                    </p>
+                    <div class="about__stats">
+                        <div class="stat">
+                            <span class="stat__number" data-count="50">0</span>
+                            <span class="stat__label">Проектов</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-count="5">0</span>
+                            <span class="stat__label">Лет опыта</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-count="30">0</span>
+                            <span class="stat__label">Довольных клиентов</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Работы -->
+    <section class="works" id="works">
+        <div class="container">
+            <span class="section__label">Портфолио</span>
+            <h2 class="section__title">Избранные работы</h2>
+            <div class="works__grid">
+                <article class="work-card" data-category="web">
+                    <div class="work-card__image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80" alt="E-commerce Dashboard">
+                        <div class="work-card__overlay">
+                            <span class="work-card__category">Web App</span>
+                            <h3 class="work-card__title">E-commerce Dashboard</h3>
+                            <p class="work-card__desc">Аналитическая панель для управления онлайн-магазином</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card" data-category="mobile">
+                    <div class="work-card__image">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&q=80" alt="Fitness App">
+                        <div class="work-card__overlay">
+                            <span class="work-card__category">Mobile App</span>
+                            <h3 class="work-card__title">Fitness Tracker</h3>
+                            <p class="work-card__desc">Мобильное приложение для отслеживания тренировок</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card" data-category="web">
+                    <div class="work-card__image">
+                        <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800&q=80" alt="Banking App">
+                        <div class="work-card__overlay">
+                            <span class="work-card__category">Fintech</span>
+                            <h3 class="work-card__title">Banking Interface</h3>
+                            <p class="work-card__desc">Современный интерфейс банковского приложения</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card" data-category="mobile">
+                    <div class="work-card__image">
+                        <img src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&q=80" alt="Travel App">
+                        <div class="work-card__overlay">
+                            <span class="work-card__category">Mobile App</span>
+                            <h3 class="work-card__title">Travel Companion</h3>
+                            <p class="work-card__desc">Приложение для планирования путешествий</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card" data-category="web">
+                    <div class="work-card__image">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=800&q=80" alt="SaaS Platform">
+                        <div class="work-card__overlay">
+                            <span class="work-card__category">SaaS</span>
+                            <h3 class="work-card__title">Project Management</h3>
+                            <p class="work-card__desc">Платформа для управления проектами команды</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="work-card" data-category="mobile">
+                    <div class="work-card__image">
+                        <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&q=80" alt="Food Delivery">
+                        <div class="work-card__overlay">
+                            <span class="work-card__category">Mobile App</span>
+                            <h3 class="work-card__title">Food Delivery</h3>
+                            <p class="work-card__desc">Сервис доставки еды с удобным UX</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Навыки -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <span class="section__label">Экспертиза</span>
+            <h2 class="section__title">Чем я занимаюсь</h2>
+            <div class="skills__grid">
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18M9 21V9"/>
+                        </svg>
+                    </div>
+                    <h3>UI Design</h3>
+                    <p>Визуальный дизайн интерфейсов, типографика, цветовые системы, компоненты</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>UX Research</h3>
+                    <p>Исследования пользователей, юзабилити-тестирование, аналитика поведения</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                            <polyline points="10 9 9 9 8 9"/>
+                        </svg>
+                    </div>
+                    <h3>Прототипирование</h3>
+                    <p>Wireframes, интерактивные прототипы, user flows в Figma</p>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-card__icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                    </div>
+                    <h3>Design Systems</h3>
+                    <p>Создание и поддержка дизайн-систем для масштабируемых продуктов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact__wrapper">
+                <span class="section__label">Связаться</span>
+                <h2 class="section__title contact__title">Давайте создадим что-то особенное вместе</h2>
+                <p class="contact__text">
+                    Открыта для новых проектов и интересных предложений. 
+                    Напишите — обсудим вашу идею!
+                </p>
+                <div class="contact__links">
+                    <a href="mailto:hello@yankova.design" class="contact__link">
+                        <span class="contact__link-label">Email</span>
+                        <span class="contact__link-value">hello@yankova.design</span>
+                    </a>
+                    <a href="https://t.me/yankova" class="contact__link" target="_blank" rel="noopener">
+                        <span class="contact__link-label">Telegram</span>
+                        <span class="contact__link-value">@yankova</span>
+                    </a>
+                    <a href="https://behance.net" class="contact__link" target="_blank" rel="noopener">
+                        <span class="contact__link-label">Behance</span>
+                        <span class="contact__link-value">Портфолио</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <p class="footer__copy">© 2025 Янкова Яна. UI/UX Designer</p>
+                <p class="footer__tagline">Сделано с любовью к деталям</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
